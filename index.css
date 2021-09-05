@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: coral;
+    color: wheat;
+}
+.head h1{
+    font-size: 60px;
+    text-align: center;
+}
+.head p{
+    font-size: 30px;
+}
