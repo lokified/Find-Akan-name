@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="content">
@@ -17,7 +18,7 @@
 
             <p>
                 Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. <br>
-                Do you want to know your Akan Name? <em>Fill in the here >></em> 
+                Do you want to know your Akan Name? <em>Fill in here >></em> 
                    
             </p>
 
@@ -35,22 +36,22 @@
                 
                 <div class="radios">
 
-                    <input type="radio" id="male">
+                    <input type="radio" id="male" name="gender">
                     <label for="male">Male</label><br>
-                    <input type="radio" id="female">
+                    <input type="radio" id="female" name="gender">
                     <label for="female">Female</label><br>
 
                 </div>
                 
              
-                <button type="button">Check</button>
+                <button type="button" onclick="findAkan()">Check</button>
                 <button type="reset">Reset</button>
 
 
             </form>
         </div>
 
-        <div class="card2">
+        <div class="card2" id="card22">
 
             <h4>You found it!!</h4>
 
@@ -63,12 +64,13 @@
 
             </div>
             
-            <p id="akan"> AKAN</p>
-
-            <img src="icons/icons8-circled-x-96.png" alt="" height="35px" id="cancel">
+            <p id="akan"> </p>
+            
+            <img src="icons/icons8-circled-x-96.png" alt="" height="35px" id="cancel" onclick="exit()">
 
         </div>
     </div>
+    <script src="mine.js"></script>
     
 </body>
 </html>

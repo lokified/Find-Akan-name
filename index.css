@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Mali' cursive;
+    font-family: 'Mali', cursive;
 }
 .content{
 
@@ -59,6 +59,7 @@ button{
     position: absolute;
     top: 50px;
     left: 30%;
+    visibility: hidden; 
 }
 .card2 h4{
     font-size: 40px;
@@ -81,4 +82,10 @@ button{
     font-size: 70px;
     margin-top: 50px;
     font-weight: 800;
+}
+#error{
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    visibility: hidden;
 }
