@@ -16,4 +16,10 @@ function findAkan(){
     catch(err){
         message.innerHTML=err;
     }
+    
+    //calculates the day
+    let y =document.getElementById("year").value;
+    var dob = m+","+d+","+y;
+    var then = new Date(dob);
+    var theday =then.getDay();
 }
