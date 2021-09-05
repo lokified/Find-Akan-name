@@ -1,8 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: coral;
-    color: wheat;
+    
+}
+.content{
+
+   background-color: wheat;
 }
 .head h1{
     font-size: 60px;
@@ -10,4 +13,40 @@
 }
 .head p{
     font-size: 30px;
+    padding: 20px;
+    margin: 0 50px;
+}
+.card{
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    background-color: white;
+    margin: 10px 30%;
+    padding: 30px;
+    font-size: 20px;
+    
+}
+input{
+    border: 2px solid coral;
+    width:60%;
+    height: 30px;
+    margin: 10px 0;
+    text-align: center;
+    
+}
+.radios input{
+    width: 15px;
+    height: 15px;
+}
+.radios label{
+    margin-top:-20px;
+}
+button{
+    padding: 5px 20px;
+    margin: 10px 30px;
+    font-size: 15px;
+    background-color: coral;
+    color: white;
+    border: 0;
+    border-radius: 5px;
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div>
+    <div class="content">
         <div class="head">
             <h1>Find Your Akan Name</h1>
             <p>
@@ -17,7 +17,7 @@
             </p>
         </div>
         
-        <div>
+        <div class="card">
             <form action="#">
 
                 <label for="date">Enter date</label><br>
@@ -26,12 +26,16 @@
                 <input type="text" id="month"><br>
                 <label for="year">Enter year</label><br>
                 <input type="text" id="year"><br>
+                
+                <div class="radios">
+                    <input type="radio" id="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female">
+                    <label for="female">Female</label><br>
 
-                <input type="radio" id="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female">
-                <label for="female">Female</label><br>
-
+                </div>
+                
+             
                 <button type="button">Check</button>
                 <button type="reset">Reset</button>
 
