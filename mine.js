@@ -35,7 +35,8 @@ function findAkan(){
 
         dayborn =days[theday];
         dob = dayborn;
-        alert ( dob);
+        document.getElementById("card22").style.visibility="visible";
+        throw dob;
     }
 
     else if(female.checked == true){
@@ -50,7 +51,8 @@ function findAkan(){
 
         dayborn =days[theday];
         dob = dayborn;
-        alert (dob);
+        document.getElementById("card22").style.visibility="visible";
+        throw dob; 
     }
     else{
         alert("gender not selected");
