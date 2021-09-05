@@ -65,3 +65,14 @@ button{
     text-align: center;
     margin: 20px 0;
 }
+.congrats-pic{
+    padding: 0 70px;
+}
+.congrats-pic img{
+    margin: 0 10px;
+}
+#cancel{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
