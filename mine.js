@@ -12,10 +12,7 @@ function findAkan(){
         if((m<=0) || (m>12)){
             alert("invalid month,please input again");
         }
-    }
-    catch(err){
-        message.innerHTML=err;
-    }
+
     
     //calculates the day
     let y =document.getElementById("year").value;
@@ -38,6 +35,28 @@ function findAkan(){
 
         dayborn =days[theday];
         dob = dayborn;
-        throw dob;
+        alert ( dob);
+    }
+
+    else if(female.checked == true){
+        var days = new Array(7);
+        days[0]="Akosua";
+        days[1] ="Adwoa";
+        days[2] ="Abenaa";
+        days[3] ="Akua";
+        days[4] ="Yaa";
+        days[5] ="Afua";
+        days[6] ="Ama";
+
+        dayborn =days[theday];
+        dob = dayborn;
+        alert (dob);
+    }
+    else{
+        alert("gender not selected");
+    }
+ }
+    catch(err){
+          message.innerHTML=err;
     }
 }
