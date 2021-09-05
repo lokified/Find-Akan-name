@@ -62,3 +62,7 @@ function findAkan(){
           message.innerHTML=err;
     }
 }
+
+function exit(){
+    document.getElementById("card22").style.visibility="hidden"
+}
