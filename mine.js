@@ -1,7 +1,5 @@
 function findAkan(){
-    let message=document.getElementById("akan");
-    message.innerHTML=" ";
-    
+  
      // checks the validity of date and month
     let d= parseInt(document.getElementById("date").value);
     let m= parseInt(document.getElementById("month").value);
@@ -23,11 +21,11 @@ function findAkan(){
 
     //checks whether female or male
     var male = document.getElementById("male");
-    var female =document.getElementById("female");
+    var female = document.getElementById("female");
 
     if(male.checked == true){
         var days = new Array(7);
-        days[0]="Kwasi";
+        days[0] ="Kwasi";
         days[1] ="Kwadwo";
         days[2] ="Kwabena";
         days[3] ="Kwaku";
@@ -35,7 +33,7 @@ function findAkan(){
         days[5] ="Kofi";
         days[6] ="Kwame";
 
-        dayborn =days[Math.round(theday)];
+        dayborn = days[Math.round(theday)];
 
         document.getElementById("card22").style.visibility="visible";
         document.getElementById("akan").innerHTML= dayborn; 
@@ -43,7 +41,7 @@ function findAkan(){
 
     else if(female.checked == true){
         var days = new Array(7);
-        days[0]="Akosua";
+        days[0] ="Akosua";
         days[1] ="Adwoa";
         days[2] ="Abenaa";
         days[3] ="Akua";
@@ -51,7 +49,7 @@ function findAkan(){
         days[5] ="Afua";
         days[6] ="Ama";
 
-        dayborn =days[Math.round(theday)];
+        dayborn = days[Math.round(theday)];
 
         document.getElementById("card22").style.visibility="visible";
         document.getElementById("akan").innerHTML= dayborn; 
@@ -60,6 +58,7 @@ function findAkan(){
     else{
         alert("gender not selected");
     }
+    //adds opacity when checking results
     document.getElementById("hide-content").style.opacity=".2";
    
 }
