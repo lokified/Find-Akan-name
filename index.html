@@ -10,8 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    <div class="content">
+<body >
+    <div class="content" id="hide-content">
         <div class="head">
 
             <h1>Find Your Akan Name</h1>
@@ -50,10 +50,11 @@
                     Saturday: Ama <br>
                 </p>
             </div>
-            <button>Find your name</button>
+            <button type="button" onclick="showForm()">Find your name</button>
         </div>
         
-        <div class="card">
+        <div class="card" id="show-card">
+            <p><a href="index.html"> Back </a></p>
             <p>Do you want to know your Akan Name? <em>Fill in here >></em> </p>
             <form action="#">
 
@@ -81,24 +82,25 @@
             </form>
         </div>
 
-        <div class="card2" id="card22">
+    </div>
 
-            <h4>You found it!!</h4>
+    <div class="card2" id="card22">
 
-            <div class="congrats-pic">
+        <h4>You found it!!</h4>
 
-                <img src="icons/icons8-celebration-64 (1).png" alt="">
-                <img src="icons/icons8-celebration-64.png" alt="">
-                <img src="icons/icons8-celebration-64 (1).png" alt="">
-                <img src="icons/icons8-celebration-64.png" alt="">
+        <div class="congrats-pic">
 
-            </div>
-            
-            <p id="akan"> </p>
-            
-            <img src="icons/icons8-circled-x-96.png" alt="" height="35px" id="cancel" onclick="exit()">
+            <img src="icons/icons8-celebration-64 (1).png" alt="">
+            <img src="icons/icons8-celebration-64.png" alt="">
+            <img src="icons/icons8-celebration-64 (1).png" alt="">
+            <img src="icons/icons8-celebration-64.png" alt="">
 
         </div>
+        
+        <p id="akan"> </p>
+        
+        <img src="icons/icons8-circled-x-96.png" alt="" height="35px" id="cancel" onclick="exit()">
+
     </div>
     <script src="mine.js"></script>
     
