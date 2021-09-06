@@ -3,26 +3,28 @@ function findAkan(){
     message.innerHTML=" ";
     
      // checks the validity of date and month
-    let d= document.getElementById("date").value;
-    let m=document.getElementById("month").value;
-    try{
-        if((d<=0) || (d>31)){
+    let d= parseInt(document.getElementById("date").value);
+    let m= parseInt(document.getElementById("month").value);
+    
+        if((d <= 0) || (d > 31)){
             alert("Invalid date, please input again");
         }
-        if((m<=0) || (m>12)){
+        if((m <= 0) || (m > 12)){
             alert("invalid month,please input again");
         }
 
     
     //calculates the day
-    let y =document.getElementById("year").value;
-    var dob = m+","+d+","+y;
-    var then = new Date(dob);
-    var theday =then.getDay();
+    let y = parseInt(document.getElementById("year").value);
+
+    c = Math.round(((y / 100) + 1));
+    theday =( ( (c/4) -2*c-1) + ((5*y/4) ) + ((26*(m+1)/10)) + d ) % 7;
+
 
     //checks whether female or male
     var male = document.getElementById("male");
     var female =document.getElementById("female");
+
     if(male.checked == true){
         var days = new Array(7);
         days[0]="Kwasi";
@@ -33,10 +35,10 @@ function findAkan(){
         days[5] ="Kofi";
         days[6] ="Kwame";
 
-        dayborn =days[theday];
-        dob = dayborn;
+        dayborn =days[Math.round(theday)];
+
         document.getElementById("card22").style.visibility="visible";
-        throw dob;
+        document.getElementById("akan").innerHTML= dayborn; 
     }
 
     else if(female.checked == true){
@@ -49,19 +51,19 @@ function findAkan(){
         days[5] ="Afua";
         days[6] ="Ama";
 
-        dayborn =days[theday];
-        dob = dayborn;
+        dayborn =days[Math.round(theday)];
+
         document.getElementById("card22").style.visibility="visible";
-        throw dob; 
+        document.getElementById("akan").innerHTML= dayborn; 
     }
+
     else{
         alert("gender not selected");
     }
- }
-    catch(err){
-          message.innerHTML=err;
-    }
+ 
+   
 }
+
    //cancel the results section
 function exit(){
     document.getElementById("card22").style.visibility="hidden";
