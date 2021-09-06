@@ -22,7 +22,7 @@ According to Ghana's culture,each day of the week has its own name. The applicat
     * OUTPUT:"clears the inputs in the form"
 
 ## Known Bugs
-error message is not customized.
+error message is not customized when form fails to submit.
 ## Technologies Used
 * HTML
 * CSS
