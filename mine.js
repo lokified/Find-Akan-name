@@ -60,11 +60,17 @@ function findAkan(){
     else{
         alert("gender not selected");
     }
- 
+    document.getElementById("hide-content").style.opacity=".2";
    
 }
+   //shows the form to be filled
+   function showForm(){
+       document.getElementById("show-card").style.visibility="visible";
+       
+    }
 
    //cancel the results section
-function exit(){
-    document.getElementById("card22").style.visibility="hidden";
-}
+    function exit(){
+       document.getElementById("card22").style.visibility="hidden";
+       document.getElementById("hide-content").style.opacity="1";
+    }
